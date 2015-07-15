@@ -1,0 +1,35 @@
+<!--
+Use this to create the framework
+
+% is the prompt the computer gives you 
+
+%meteor create demo1
+%cd demo1
+%rm demo1.* on pc %del demo1.*
+	-->
+
+<head>
+	<title>
+	Our simple demo! 
+</title>
+</head>
+
+
+<body>
+
+	{{> clicker}}
+	{{> exit}}
+
+</body>
+
+
+<template name = "clicker">
+	<button id="clicker">Enter</button>
+	<br>
+	<div id="count">Counter = {{theCount}} </div>
+</template>
+
+<template name = "exit">
+	<button id="exit">Exit</button>
+	<br>
+</template>
